@@ -160,7 +160,7 @@ body.dark-mode #modeToggle {
 
 .main-section .swiper-div .swiper-con-img {
     padding-bottom: 20px;
-    background-image: url("/imgs/bannerSwiper.svg");
+    background-image: url(../imgs/bannerSwiper.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -230,7 +230,7 @@ body.dark-mode #modeToggle {
 }
 
 .main-section .swiper-div .testimonial-item .description {
-    background-image: url(/imgs/bannerMain.svg);
+    background-image: url(../imgs/bannerMain.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -362,7 +362,7 @@ body.dark-mode #modeToggle {
 .shape-img{
     max-height: 340px;
     overflow: hidden;
-    background-image: url(/imgs/product-overlay.png);
+    background-image: url(../imgs/product-overlay.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -373,7 +373,7 @@ body.dark-mode #modeToggle {
     z-index: -1;
   }
   .products .card-body {
-    background-image: url(/imgs/masarshape.png);
+    background-image: url(../imgs/masarshape.png);
     background-color: var(--color1);
     background-repeat: no-repeat;
     background-size: cover;
@@ -452,19 +452,19 @@ body.dark-mode #modeToggle {
     color: var(--color2) !important;
 }
 .swiper-products .mc-cricle-2 {
-    background-image: url(/imgs/mc-cricle2.svg);
+    background-image: url(../imgs/mc-cricle2.png);
     top: -75%;
     bottom: unset;
 }
 .swiper-products .mc-2 {
-    background-image: url(/imgs/mc-frame2.svg);
+    background-image: url(../imgs/mc-frame2.png);
 }
 .swiper-products .mc-1 {
-    background-image: url(/imgs/mc-frame1.svg);
+    background-image: url(../imgs/mc-frame1.png);
     
 }
 .swiper-products .mc-cricle-1 {
-    background-image: url(/imgs/mc-cricle1.svg);
+    background-image: url(../imgs/mc-cricle1.png);
     top: 230px;
 }
 .swiper-products .title{
@@ -486,7 +486,7 @@ color: var(--color2);
 .footer {
     position: relative;
     color: white;
-    background-image: url(/imgs/masarshape.png);
+    background-image: url(../imgs/masarshape.png);
     background-color: var(--color1);
     background-repeat: no-repeat;
     background-size: cover;
