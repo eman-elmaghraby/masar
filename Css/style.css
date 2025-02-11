@@ -174,7 +174,7 @@ body.dark-mode #modeToggle {
 
 .main-section .swiper-div .swiper-pagination {
     bottom: 21px;
-    right: 50%;
+    right: 35%;
     transform: translateX(50%);
 }
 
@@ -271,7 +271,7 @@ body.dark-mode #modeToggle {
 
 @media (max-width: 576px) {
     .main-section .swiper-div .swiper-pagination {
-        bottom: 23%;
+        bottom: 35%;
         right: 27%;
     }
     .main-section .swiper-div .swiper-slide {
