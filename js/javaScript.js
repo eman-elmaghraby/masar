@@ -70,7 +70,7 @@ var swiper = new Swiper('.swiper', {
     spaceBetween: 35, 
     effect: 'slide',
     autoplay: {
-        delay: 2500,
+        delay: 2500, 
         disableOnInteraction: false,
     },
     pagination: {
@@ -85,7 +85,7 @@ var swiper = new Swiper('.swiper', {
 
 
 var swiper = new Swiper('.swiper-products', {
-    loop: false,
+    loop: true,
     speed: 600,
     slidesPerView: 3,
     centeredSlides: false,
@@ -115,3 +115,23 @@ var swiper = new Swiper('.swiper-products', {
 //Wow.js
 new WOW().init();
 
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const chatIcon = document.getElementById("chatIcon"); 
+    const chatBox = document.getElementById("chatBox"); 
+    const closeChat = document.getElementById("closeChat"); 
+
+    // Toggle chat box on chat icon click
+    chatIcon.addEventListener("click", function () {
+        chatBox.classList.toggle("open"); 
+    });
+
+    // Close chat when clicking the close button
+    closeChat.addEventListener("click", function () {
+        chatBox.classList.remove("open"); 
+    });
+});

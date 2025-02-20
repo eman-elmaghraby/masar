@@ -358,6 +358,10 @@ body.dark-mode #modeToggle {
     width: 100%;
     background: var(--color1);
     z-index: 1;
+   
+}
+.products .card-products:hover img{
+    transform: scale(1.1);
 }
 .shape-img{
     max-height: 340px;
@@ -371,6 +375,7 @@ body.dark-mode #modeToggle {
   }
   .shape-img img{
     z-index: -1;
+    transition: all 1s linear;
   }
   .products .card-body {
     background-image: url(../imgs/masarshape.png);
@@ -406,6 +411,14 @@ body.dark-mode #modeToggle {
     cursor: pointer;
 }
 /* Social Center */
+.center-item{
+    transition: all 1s linear;
+    cursor: pointer;
+}
+.center-item:hover .item-data {
+    transform: scale(1.04);
+
+}
 .social-media .swiper-products {
     padding: 70px 0 90px 0;
 }
@@ -542,4 +555,329 @@ color: var(--color2);
     color: #00c4ff;
 }
 
+
+
+
+
+ /* Floating Sidebar */
+/* Sidebar Styling */
+
+.chat-sidebar {
+    padding: 0;
+    width: 48px;
+    position: fixed;
+    top: 30%;
+    color: #fff;
+    height: auto;
+    overflow: hidden;
+    background: linear-gradient(180deg, #00003D 38.02%, #85868A 100%);
+    box-shadow: 0 0 21px 2px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.5s ease-in-out;
+    min-width: unset !important;
+    left: 0px;
+    padding-right: 10px;
+    left: unset;
+    right: 0px;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Expand sidebar on hover */
+.chat-sidebar:hover {
+    transition: all 0.5s ease-in-out;
+    width: 155px;
+}
+
+/* Chat Options (Icon & Label Wrapper) */
+.chat-option {
+    padding: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    border-width: 0 0 1px;
+    white-space: nowrap;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+
+/* Chat Icons - Always Visible */
+.chat-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.chat-icon{
+    padding: 6px 20px;
+    cursor: pointer;
+    overflow: hidden;
+    border-width: 0 0 1px;
+    white-space: nowrap;
+    height: 48px;
+}
+
+/* Chat Labels - Initially Hidden */
+.chat-label {
+    white-space: nowrap;
+    opacity: 0;
+    font-size: 16px;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+/* Show Labels on Hover */
+.chat-sidebar:hover .chat-label {
+    opacity: 1;
+}
+
+/* Chat Box - Initially Hidden */
+.chat-box {
+    position: fixed;
+   
+    bottom: -480px;
+    height: 439px;
+    border-radius: 10px;
+    z-index: 99;
+    width: 320px;
+    box-shadow: 1px 1px 40px 2px rgba(0, 0, 0, 0.17);
+    transition: all 0.7s ease-in-out;
+}
+.chat-box .title{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.chat-box figure{
+    margin-right: unset;
+    margin-left: 10px;
+ 
+}
+.chat-box .title figure{
+    margin-bottom: 0;
+    width: 25px;
+    height: 25px;
+}
+.chat-box .close{
+    width:16%;
+    height: 16%;
+    margin-bottom: 10px;
+
+}
+.chat-box .close figure{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+/* Chat Box - Opened */
+.chat-box.open {
+    bottom: 0px; /* Slide in when open */
+    right:  10px;
+}
+
+/* Chat Header */
+.chat-header {
+        padding: 12px;
+        border-radius: 15px 15px 0 0;
+        background-color: #03ccff;
+        color: #fff;
+}
+
+/* Close Body */
+.chat-body{
+    padding: 10px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+ 
+.chat-converse{
+    position: relative;
+    background: #fff;
+    margin: 6px 0 0px 0;
+    height: 360px;
+    min-height: 0;
+    font-size: var(--font-size-text-v1);
+    line-height: 18px;
+    overflow-y: auto;
+    width: 100%;
+    padding: 10px;
+    float: right;
+}
+.chat_converse .chat_msg.chat_msg_admin {
+    position: relative;
+    width: 200px;
+    margin-left: 32px;
+    margin: 8px 0 15px 0;
+    max-width: 80%;
+    display: block;
+    word-wrap: break-word;
+    border-radius: 10px;
+    animation: zoomIn 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  
+    z-index: 999;
+}
+.chat_converse .chat_msg.chat_msg_admin::after{
+    border-left: 10px solid transparent;
+    left: -9px;
+    border-bottom: 10px solid #f0f1f2;
+    position: absolute;
+    top: 10px;
+    content: "";
+    width: 0;
+    height: 0;
+}
+.chat_converse .chat_msg  .chat_avatar img {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    left: -50px;
+    background: rgba(0, 0, 0, 0.03);
+    position: absolute;
+}
+.chat_converse .chat_msg .cnt {
+    padding: 10px;
+    text-align: start;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-secondary);
+    background-color: #f7f7f7;
+    margin: 0;
+    font-size: var(--font-size-text-v2);
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.5s;
+}
+.chat_converse .chat_msg ul li {
+    cursor: pointer;
+    padding: 15px 5px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #f7f7f7;
+    margin: 0;
+    font-size: var(--font-size-text-v2);
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.5sease-in-out;
+}
+.chat_converse .chat_msg ul li:hover{
+    background-color: var(--color2);
+}
+.chat-footer{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 40px;
+
+}
+.chat-footer .send-msg-icon{
+    width: 25px;
+    height: 25px;
+    box-shadow: none;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+
+}
+.chat-footer .chat-text{
+    margin: 5px 0 0 0;
+    width: 60%;
+    font-size: var(--font-size-text-v2);
+    color: #4b4b4b;
+    border: none;
+    outline: 0;
+    text-align: right;
+    resize: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* Chat Sidebar Left */
+.chat-left{
+    padding: 0;
+    width: 48px;
+    position: fixed;
+    top: 30%;
+    color: #fff;
+    height: auto;
+    overflow: hidden;
+    background: linear-gradient(180deg, #00003D 38.02%, #85868A 100%);
+    box-shadow: 0 0 21px 2px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.5s ease-in-out;
+    left: 0px;
+    padding-right: 10px;
+    right: unset;
+    left: 0px;
+    direction: ltr;
+}
+
+/* Expand sidebar on hover */
+.chat-left:hover {
+    transition: all 0.5s ease-in-out;
+    width: 155px;
+
+}
+.chat-option-left {
+    padding: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    border-width: 0 0 1px;
+    white-space: nowrap;
+    height: 48px;
+}
+
+
+/* Chat Icons - Always Visible */
+.chat-i-left {
+    display: flex;
+        align-items: center;
+        object-fit: contain;
+        height: 25px;
+        position: relative;
+        top: 0px;
+        margin-top: 0px;
+        margin-right: -10px;
+}
+
+.chat-icon-left{
+    padding: 6px 20px;
+    cursor: pointer;
+    overflow: hidden;
+    border-width: 0 0 1px;
+    white-space: nowrap;
+    height: 48px;
+    margin-left: -19px;
+}
+
+/* Chat Labels - Initially Hidden */
+.chat-label-left {
+    white-space: nowrap;
+    opacity: 0;
+    font-size: 16px;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: unset;
+    margin-left: 20px;
+}
+
+/* Show Labels on Hover */
+.chat-left:hover .chat-label-left {
+    opacity: 1;
+}
 

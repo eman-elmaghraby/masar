@@ -25,32 +25,33 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
  <!--Start Header Section -->
-<div class="container-fluid p-0">
+<div class="container-fluid p-0"> 
    
     <div class="header-color text-white p-2">
-        <div class="row align-items-center text-center mx-0">
-            <!-- Time -->
-            <div class="col-5 col-md-1 border rounded p-1 ms-1">
-                <span id="time"></span>
-            </div>
-            <!-- Date -->
-            <div class="col-6 col-md-2 border rounded p-1">
-                <span id="date"></span>
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mx-0">
+            <!-- Time and Date -->
+            <div class="d-flex flex-wrap gap-2">
+                <div class="border rounded p-1 text-center" style="min-width: 80px;">
+                    <span id="time"></span>
+                </div>
+                <div class="border rounded p-1 text-center" style="min-width: 100px;">
+                    <span id="date"></span>
+                </div>
             </div>
             <!-- Financial Prices -->
-            <div class="col-12 col-md-4 mt-2 mt-md-0">
+            <div class="text-center flex-grow-1 text-md-center fw-bold">
                 أسعار المنتجات التمويلية
             </div>
-            <!-- Mode Toggle -->
-            <div class="col-6 col-md-2">
+            <!-- Mode Toggle and Phone Number -->
+            <div class="d-flex align-items-center gap-3">
                 <i id="modeToggle" class="fa-solid fa-toggle-off" style="font-size: 30px; cursor: pointer;"></i>
-            </div>
-            <!-- Phone Number -->
-            <div class="col-6 col-md-2">
-                <i class="fa-solid fa-tty"></i> 8002442233 
+                <div class="text-nowrap">
+                    <i class="fa-solid fa-tty"></i> 8002442233
+                </div>
             </div>
         </div>
     </div>
+    
 
     <!-- Logo Section -->
     <div class="d-flex flex-column  align-items-center mt-3 ">
@@ -81,9 +82,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">الشركات</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">عن الشركة</a></li>
             </ul>
-            <form class="d-flex">
-                
-            </form>
+      
         </div>
         <div class="search-container position-relative">
             <input class="form-control ps-4" type="search" placeholder="ابحث هنا ...">
@@ -93,7 +92,7 @@
 <!-- End Navbar -->
 
 <!-- Start Main Section -->
-<section  class="  mt-3 wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+<section  class="  mt-3 wow animate__animated animate__fadeIn">
     <div class="main-section d-flex justify-content-center align-items-center position-relative w-100">
        <div class="container">
         <div class="row justify-content-center">
@@ -240,8 +239,8 @@
 </section>
 <!-- End Main Section -->
 
-<!-- Start Requestes Section -->
-<section class=" mt-3 mb-3 wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
+<!-- Start Requestes Section --> 
+<section class=" mt-3 mb-3 wow animate__animated animate__fadeIn" >
    <div class="container">
     <div class="row header-color text-white rounded-pill p-3 text-center">
         <div class="col ">
@@ -275,7 +274,7 @@
 <!-- End Requestes Section -->
 
 <!-- Start Products Section -->
-<section class="products mt-3 wow animate__animated animate__fadeIn" data-wow-delay="0.9s">
+<section class="products mt-3 wow animate__animated animate__fadeIn" >
    <div class="container">
    <div class="row">
     <div class="co-12">
@@ -328,7 +327,7 @@
 
 <!-- Start Social Center Section -->
 
-<section id="social-media" class="pb-5 mb-3 mt-5 wow animate__animated animate__fadeIn" data-wow-delay="1.2s">
+<section id="social-media" class="pb-5 mb-3 mt-5 wow animate__animated animate__fadeIn" > 
    <div class="container">
     <div class="row align-items-center">
         <div class="col-12">
@@ -400,44 +399,41 @@
   </section>
 <!-- End Social Center Section -->
 
-<!-- Start Clients  Section -->
-<section class="p-5  mt-5 wow animate__animated animate__fadeIn" data-wow-delay="1.5s" style="background: linear-gradient(to top, #B2B2B2, rgba(178, 178, 178, 0));">
+<!-- Start Clients  Section --> 
+<section class="p-5 mt-5 wow animate__animated animate__fadeIn" 
+    style="background: linear-gradient(to top, #B2B2B2, rgba(178, 178, 178, 0));">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 client-title">
-                <h2 class=" colorText mb-5" style="font-size: 1.3rem; font-weight: 600;">جهات ذات علاقة</h2>
+                <h2 class="colorText mb-5" style="font-size: 1.3rem; font-weight: 600;">جهات ذات علاقة</h2>
             </div>
         </div>
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-12">
-                    <div class="row d-flex justify-content-between pb-3">
-                        <div class="col-2">
-                            <img src="imgs/2560px-Tadawul_logo 1.png" class="w-75" alt="Tadawul"/>
-                        </div>
-                        <div class="col-2">
-                            <img src="imgs/سمة 1.png" class="w-75" alt="Sama"/>
-                        </div>
-                        <div class="col-2">
-                            <img src="imgs/CPLogo_ar 1.png" class="w-75" alt="CPLogo"/>
-                        </div>
-                        <div class="col-2">
-                            <img src="imgs/شعار_هيئة_السوق_المالية 1.png" class="w-75" alt=""/>
-                        </div>
-                        <div class="col-2">
-                            <img src="imgs/السعودية-لإعادة-التمويل-العقاري.png" class="w-75" alt="SRC"/>
-                        </div>
-                    </div>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <img src="imgs/2560px-Tadawul_logo 1.png" class="w-50 img-fluid" alt="Tadawul"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <img src="imgs/سمة 1.png" class="w-50 img-fluid" alt="Sama"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <img src="imgs/CPLogo_ar 1.png" class="w-50 img-fluid" alt="CPLogo"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <img src="imgs/شعار_هيئة_السوق_المالية 1.png" class="w-50 img-fluid" alt=""/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center">
+                    <img src="imgs/السعودية-لإعادة-التمويل-العقاري.png" class="w-50 img-fluid" alt="SRC"/>
                 </div>
             </div>
         </div>
     </div>
-   
 </section>
+
  <!-- End Clients  Section -->
 
  <!-- Start Footer  Section -->
- <section class=" wow animate__animated animate__fadeIn" data-wow-delay="1.8s">
+ <section class=" wow animate__animated animate__fadeIn" >
     <footer class="footer fw-bolder">
         <div class="container p-5">           
          <div class="row gy-4">
@@ -530,6 +526,122 @@
  </section>
 
   <!-- End Footer  Section -->
+
+
+  <!-- Chat Sidebar Right-->
+  <ul class="chat-sidebar">
+    <li id="chatIcon" style="display: block;" >
+       <div class="chat-option">
+        <div class="chat-i">
+            <div class="chat-icon">  <img src="imgs/chat_icon.svg" style="width: 20px;"/></div>
+        <div class="chat-label">محادثة</div>
+        </div>
+       </div>
+    </li>
+    <li >
+       <div class="chat-option">
+       <div class="chat-i">
+        <div class="chat-icon">
+            <img src="imgs/calling__icon.png" style="width: 20px;"/>
+        </div>
+        <div class="chat-label">مكالمة</div>
+       </div>
+       </div>
+    </li>
+</ul>
+
+<!-- Chat Box -->
+<div id="chatBox" class="chat-box">
+    <div class="chat-header d-flex justify-content-between align-items-center ">
+       <div class="title">
+       <figure>
+        <img src="imgs/chat_icon.svg" style="width: 100%; height: 100%;"/>
+       </figure>
+        <span>محادثة</span>
+       </div>
+       <div class="close d-flex align-items-center" style="cursor: pointer;">
+        <figure>
+            <img src="imgs/minus__icon.png" style="width: 100%; height: 100%;"/>
+        </figure>
+        <figure id="closeChat">
+            <img src="imgs/close__icon.png" style="width: 100%; height: 100%;"/>
+        </figure>
+       </div>
+    </div>
+    <div class="chat-body">
+        <form>
+            <div class="chat_converse d-flex justify-content-center">
+                <div class="chat_msg chat_msg_admin position-relative">
+                    <div class="chat_avatar">
+                        <img src="imgs/avatarman.jpeg">
+                    </div>
+                    <ul class="list-unstyled">
+                        <div class="cnt"><p style="text-align: right;">مرحبا بكم , شكرا لتواصلكم مع شركة مسار النمو للتمويل</p></div>
+                                <li >
+                                    <a>منتجاتنا</a>
+                                </li>
+                                <li>
+                                    <a>فروعنا</a>
+                                </li>
+                                <li >
+                                    <a>للطلبات والشكاوي</a>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <button  class="send-msg-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <input type="text" placeholder="اكتب رسالتك هنا" class="chat-text">
+            </div>
+       </form>
+    </div>
+    </div>
+
+   <!-- Chat Sidebar Left-->
+   <ul class="chat-sidebar chat-left">
+    <li id="chatIcon" style="display: block;" >
+       <div class="chat-option-left">
+        <div class="chat-i-left">
+            <div class="chat-icon-left">  <img src="imgs/linkedin__icon.png" style="width: 20px;"/></div>
+            <div class="chat-label-left">لينكدإن</div>
+        </div>
+       </div>
+    </li>
+    <li id="chatIcon" style="display: block;" >
+        <div class="chat-option-left">
+         <div class="chat-i-left">
+             <div class="chat-icon-left">  <img src="imgs/twitter.png" style="width: 20px;"/></div>
+             <div class="chat-label-left">تويتر</div>
+         </div>
+        </div>
+     </li>
+     <li id="chatIcon" style="display: block;" >
+        <div class="chat-option-left">
+         <div class="chat-i-left">
+             <div class="chat-icon-left">  <img src="imgs/instegram__icon.png" style="width: 20px;"/></div>
+             <div class="chat-label-left">إنستجرام</div>
+         </div>
+        </div>
+     </li> 
+     <li id="chatIcon" style="display: block;" >
+        <div class="chat-option-left">
+         <div class="chat-i-left">
+             <div class="chat-icon-left">  <img src="imgs/location__icon.png" style="width: 20px;"/></div>
+             <div class="chat-label-left">الموقع</div>
+         </div>
+        </div>
+     </li>   
+</ul>  
+   
+</div>
+
+<script src="script.js"></script>
+
+
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
